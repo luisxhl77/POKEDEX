@@ -41,12 +41,13 @@ footer{
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
+    margin-bottom: 2vh;
 }
 img{
     width: 100%;
     height: auto;
 }
-header>div{
+header>a>div{
     width: 30px;
     height: 30px;
 }
@@ -168,7 +169,7 @@ footer>.contBtn{
     header{
         justify-content: flex-start;
     }
-    header>div{
+    header>a>div{
         margin: 0px 7px;
     }
     main{
@@ -228,7 +229,7 @@ footer>.contBtn{
     header{
         height: 60px;
     }
-    header>div{
+    header>a>div{
         margin: 0px 7px;
     }
     .contBtn>button{
