@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="./img/pokebola.png" alt="">
+        </div>
+        <h2>POKÉDEX_</h2>
+    </header>
+    <main>
+        <div class="contInfo">
+            <div class="contName">
+                <div>
+                    <img src="./img/fuego.png" alt="" id="element">
+                </div>
+                <input type="text" name="" id="namePokemon" value="CHARIZARD" readonly="true">
+            </div>
+            <div class="contPokemon">
+                <img src="./img/charizard.png" alt="" id="imgpokemon" title="CHARIZARD" onclick="movePokemon()">
+            </div>
+        </div>
+        <div class="contStats">
+            <div>
+                <p>NO</p>
+                <input type="text" name="" id="No" value="006" readonly="true">
+            </div>
+            <div>
+                <p>LEVEL</p>
+                <input type="text" name="" id="level" value="100" readonly="true">
+            </div>
+            <div>
+                <p>TYPE</p>
+                <input type="text" name="" id="type" value="FIRe" readonly="true">
+            </div>
+            <div>
+                <p>HABILITY</p>
+                <input type="text" name="" id="hability" value="FLAMES" readonly="true">
+            </div>
+            <div>
+                <p>HEIGHT</p>
+                <input type="text" name="" id="height" value="1.7 M" readonly="true">
+            </div>
+            <div>
+                <p>WEIGHT</p>
+                <input type="text" name="" id="weight" value="50.5 KG" readonly="true">
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="contOther">
+            <h2>OTHERS</h2>
+        </div>
+        <div class="contBtn">
+            <button onclick="viewPokemon(0)"> <img src="./img/Squirte.png" alt="" title="Squirte"></button>
+            <button onclick="viewPokemon(1)"><img src="./img/newtwo.webp" alt="" title="newtwo"></button>
+        </div>
+        <div class="contBtn">
+            <button onclick="viewPokemon(2)"><img src="./img/Solgaleo.webp" alt="" title="Solgaleo"></button>
+            <button onclick="viewPokemon(3)"><img src="./img/snorlax.webp" alt="" title="snorlax"></button>
+        </div>
+    </footer>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

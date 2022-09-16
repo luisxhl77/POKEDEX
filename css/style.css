@@ -1,0 +1,329 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    background-image: url(../img/fondoPokeballs.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header{
+    margin-top: 2vh;
+    width: 95%;
+    height: 50px;
+    border-radius: 15px 15px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ff0000;
+}
+main{
+    width: 95%;
+    height: 550px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-direction: column;
+    background-color: #0000ff;
+}
+footer{
+    width: 95%;
+    height: 210px;
+    background-color: #ff0000;
+    border-radius: 0px 0px 15px 15px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+header>div{
+    width: 30px;
+    height: 30px;
+}
+/* MAIN */
+.contInfo{
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+main>.contInfo>.contName{
+    margin-top: 20px;
+    background-color: rgb(194, 194, 194);
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+main>.contInfo>.contName>input{
+    height: 30px;
+    font-size: 20px;
+    width: 110px;
+    border: none;
+    text-transform: uppercase;
+    background-color: transparent;
+    outline: none;
+}
+main>.contInfo>.contName>div{
+    width: 30px;
+}
+main>.contInfo>.contPokemon{
+    margin-top: 10px;
+    width: 250px;
+    height: 250px;
+    cursor: pointer;
+}
+main>.contStats{
+    padding-top: 40px;
+    margin-top: -70px;
+    width: 85%;
+    height: 245px;
+    background-color: white;
+    border-radius: 15px;
+    justify-content: center;
+    display: grid;
+}
+main>.contStats>div{
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+}
+.contStats>div>input{
+    height: 30px;
+    width: 100px;
+    border: none;
+    text-transform: uppercase;
+    background-color: transparent;
+    outline: none;
+    font-size: 20px;
+}
+.contStats>div>p{
+    font-size: 20px;
+}
+/* FOOTER */
+footer>.contOther{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer>.contBtn{
+    height: 72px;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.contBtn>button{
+    padding: 5px;
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    border: none;
+    background-color: rgb(184, 184, 184);
+    cursor: pointer;
+}
+.contBtn>button:hover{
+    background-color: rgb(104, 104, 104);
+}
+.contBtn>button:active{
+    background-color: #0000ff;
+}
+/*Animaciones*/
+.movePokemon{
+    animation: turn 2s linear; 
+}
+@keyframes turn{
+    10%{transform: rotate(5deg)}
+    20%{transform: rotate(-5deg)}
+    30%{transform: rotate(5deg)}
+    40%{transform: rotate(-5deg)}
+    50%{transform: rotate(5deg)}
+    60%{transform: rotate(-5deg)}
+    70%{transform: rotate(5deg)}
+    80%{transform: rotate(-5deg)}
+    90%{transform: rotate(5deg)}
+    100%{transform: rotate(-5deg)}
+}
+
+/*breackpoints for movile device*/
+/*.......*/
+/*breackpoints for tablets device*/
+@media screen and (min-width:570px){   
+    header{
+        justify-content: flex-start;
+    }
+    header>div{
+        margin: 0px 7px;
+    }
+    main{
+        padding: 0px 5%;
+        width: 85%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        height: 340px;
+    }
+    main>.contInfo{
+        width: 40%;
+    }
+    main>.contStats{
+        padding-top: 10px;
+        margin-top: 20px;
+        height: 275px;
+        width: 40%;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    main>.contStats>div{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+    }
+    .contStats>div>p{
+        font-weight: bold;
+    }
+    .contStats>div>input{
+        height: 30px;
+        width: 150px;
+        text-transform: uppercase;
+        background-color: transparent;
+        outline: none;
+        font-size: 20px;
+        text-align: center;
+    }
+    main>.contInfo>.contPokemon{
+        width: 270px;
+        height: 250px;
+    }
+    footer{
+        height: 110px;
+        align-content: center;
+        flex-direction: row;
+    }
+    footer>.contOther{
+        width: 30%;
+    }
+    footer>.contBtn{
+        width: 35%;
+    }
+}
+@media screen and (min-width:768px){
+    header{
+        height: 60px;
+    }
+    header>div{
+        margin: 0px 7px;
+    }
+    .contBtn>button{
+        width: 70px;
+        height: 70px;
+    }
+}
+@media screen and (min-width:960px){
+    main{
+        width: 85%;
+        padding: 0px 5%;
+        height: 400px;
+    }
+    main>.contStats{
+        height: 340px;
+    }
+    main>.contInfo>.contPokemon{
+        width: 330px;
+    }
+    footer{
+        height: 130px;
+    }
+    .contBtn>button{
+        width: 80px;
+        height: 80px;
+    }
+}
+/*brackpoints for desktop device*/
+@media screen and (min-width:1250px){
+    header>h2{
+        font-size: 1.7vw;
+    }
+    main{
+        height: 500px;
+    }
+    main>.contInfo>.contName{
+        height: 50px;
+    }
+    main>.contInfo>.contName>input{
+        font-size: 1.7vw;
+        width: 30%;
+    }
+    main>.contInfo>.contPokemon{
+        width: 420px;
+    }
+    main>.contStats{
+        height: 440px;
+    }
+    footer{
+        height: 140px;
+    }
+    .contBtn>button{
+        width: 90px;
+        height: 90px;
+    }
+    .contStats>div>p{
+        font-size: 1.5vw;
+    }
+    .contStats>div>input{
+        font-size: 2vw;
+    }
+    footer>.contOther{
+        font-size: 1.1vw;
+    }
+}
+@media screen and (min-width:1440px){
+    main{
+        height: 530px;
+    }
+    footer{
+        height: 150px;
+    }
+    .contBtn>button{
+        width: 100px;
+        height: 100px;
+    }
+}
+@media screen and (min-width:1700px){
+    main{
+        height: 600px;
+    }
+    main>.contInfo>.contName{
+        height: 60px;
+    }
+    main>.contInfo>.contPokemon{
+        width: 500px;
+    }
+    main>.contStats{
+        height: 510px;
+    }
+    footer{
+        height: 150px;
+    }
+    .contBtn>button{
+        width: 110px;
+        height: 110px;
+    }
+}
