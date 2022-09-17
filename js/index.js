@@ -68,13 +68,13 @@ const viewPokemon = (position) => {
     imgpokemon.src = pokemons[position].imgpokemon;
     imgpokemon.title = pokemons[position].namePokemon;
     imgelement.src = pokemons[position].imgelement;
-    movePokemon();
-    sound.play();
+    movePokemon(sound);
 }
-const movePokemon = () =>{
+const movePokemon = (sound) =>{
     if (imgpokemon.classList == "movePokemon") {
         imgpokemon.classList.remove("movePokemon");
     }else{
         imgpokemon.classList.add("movePokemon");
+        sound.play();
     }
 }
