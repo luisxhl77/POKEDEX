@@ -18,9 +18,10 @@ const pokemons = [
         hability: "BUBBLES",
         weight: "9 kg",
         imgpokemon: "./img/Squirtle2.webp",
-        imgelement: "./img/agua.png"
+        imgelement: "./img/agua.png",
+        sound: "./sound/squirtle.mp3"
     },{
-        namePokemon: "NEWTWO",
+        namePokemon: "MEWTWO",
         No: "150",
         type: "PSYCHIC",
         height: "2 M",
@@ -28,7 +29,8 @@ const pokemons = [
         hability: "MENTAL",
         weight: "122 kg",
         imgpokemon: "./img/newtwo.webp",
-        imgelement: "./img/psitico.png"
+        imgelement: "./img/psitico.png",
+        sound: "./sound/Mewtwo.ogg"
     },{
         namePokemon: "SOLGALEO",
         No: "391",
@@ -38,7 +40,8 @@ const pokemons = [
         hability: "CLAW",
         weight: "230 kg",
         imgpokemon: "./img/Solgaleo.webp",
-        imgelement: "./img/psitico.png"
+        imgelement: "./img/psitico.png",
+        sound: "./sound/solgaleo.mp3"
     },{
         namePokemon: "SNORLAX",
         No: "143",
@@ -49,10 +52,12 @@ const pokemons = [
         weight: "460 kg",
         imgpokemon: "./img/snorlax.webp",
         imgelement: "./img/normal.png",
+        sound: "./sound/snorlax.mp3"
     }
 ];
 
 const viewPokemon = (position) => {
+    let sound = new Audio(pokemons[position].sound);
     namePokemon.value = pokemons[position].namePokemon;
     No.value = pokemons[position].No;
     type.value = pokemons[position].type;
@@ -63,11 +68,8 @@ const viewPokemon = (position) => {
     imgpokemon.src = pokemons[position].imgpokemon;
     imgpokemon.title = pokemons[position].namePokemon;
     imgelement.src = pokemons[position].imgelement;
-    if (imgpokemon.classList == "movePokemon") {
-        imgpokemon.classList.remove("movePokemon");
-    }else{
-        imgpokemon.classList.add("movePokemon");
-    }
+    movePokemon();
+    sound.play();
 }
 const movePokemon = () =>{
     if (imgpokemon.classList == "movePokemon") {
