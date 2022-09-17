@@ -147,9 +147,9 @@ footer>.contBtn{
 }
 /*Animaciones*/
 .movePokemon{
-    animation: turn 2s linear; 
+    animation: move 2s linear; 
 }
-@keyframes turn{
+@keyframes move{
     10%{transform: rotate(5deg)}
     20%{transform: rotate(-5deg)}
     30%{transform: rotate(5deg)}
