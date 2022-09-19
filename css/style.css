@@ -47,9 +47,12 @@ img{
     width: 100%;
     height: auto;
 }
-header>a>div{
+.contIconHeader{
     width: 30px;
     height: 30px;
+}
+header>h2{
+    color: #ffffff;
 }
 /* MAIN */
 .contInfo{
@@ -58,7 +61,7 @@ header>a>div{
     align-items: center;
     flex-direction: column;
 }
-main>.contInfo>.contName{
+.contName{
     margin-top: 20px;
     background-color: rgb(194, 194, 194);
     width: 100%;
@@ -68,7 +71,7 @@ main>.contInfo>.contName{
     align-items: center;
     border-radius: 15px;
 }
-main>.contInfo>.contName>input{
+.namePokemon{
     height: 30px;
     font-size: 20px;
     width: 110px;
@@ -77,16 +80,16 @@ main>.contInfo>.contName>input{
     background-color: transparent;
     outline: none;
 }
-main>.contInfo>.contName>div{
+.contIconElement{
     width: 30px;
 }
-main>.contInfo>.contPokemon{
+.contPokemon{
     margin-top: 10px;
     width: 250px;
     height: 250px;
     cursor: pointer;
 }
-main>.contStats{
+.contStats{
     padding-top: 40px;
     margin-top: -70px;
     width: 85%;
@@ -96,14 +99,14 @@ main>.contStats{
     justify-content: center;
     display: grid;
 }
-main>.contStats>div{
+.contStat{
     width: 250px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     text-transform: uppercase;
 }
-.contStats>div>input{
+.stat{
     height: 30px;
     width: 100px;
     border: none;
@@ -112,25 +115,25 @@ main>.contStats>div{
     outline: none;
     font-size: 20px;
 }
-.contStats>div>p{
+.nameStat{
     font-size: 20px;
 }
 /* FOOTER */
-footer>.contOther{
+.contOther{
     height: 50px;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-footer>.contBtn{
+.contBtn{
     height: 72px;
     width: 70%;
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
-.contBtn>button{
+.btnPoke{
     padding: 5px;
     width: 60px;
     height: 60px;
@@ -139,12 +142,13 @@ footer>.contBtn{
     background-color: rgb(184, 184, 184);
     cursor: pointer;
 }
-.contBtn>button:hover{
+.btnPoke:hover{
     background-color: rgb(104, 104, 104);
 }
-.contBtn>button:active{
+.btnPoke:active{
     background-color: #0000ff;
 }
+
 /*Animaciones*/
 .movePokemon{
     animation: move 2s linear; 
@@ -169,7 +173,7 @@ footer>.contBtn{
     header{
         justify-content: flex-start;
     }
-    header>a>div{
+    .contIconHeader{
         margin: 0px 7px;
     }
     main{
@@ -183,7 +187,7 @@ footer>.contBtn{
     main>.contInfo{
         width: 40%;
     }
-    main>.contStats{
+    .contStats{
         padding-top: 10px;
         margin-top: 20px;
         height: 275px;
@@ -192,15 +196,15 @@ footer>.contBtn{
         align-items: center;
         flex-wrap: wrap;
     }
-    main>.contStats>div{
+    .contStat{
         width: 40%;
         display: flex;
         flex-direction: column;
     }
-    .contStats>div>p{
+    .nameStat{
         font-weight: bold;
     }
-    .contStats>div>input{
+    .stat{
         height: 30px;
         width: 150px;
         text-transform: uppercase;
@@ -209,7 +213,7 @@ footer>.contBtn{
         font-size: 20px;
         text-align: center;
     }
-    main>.contInfo>.contPokemon{
+    .contPokemon{
         width: 270px;
         height: 250px;
     }
@@ -218,10 +222,10 @@ footer>.contBtn{
         align-content: center;
         flex-direction: row;
     }
-    footer>.contOther{
+    .contOther{
         width: 30%;
     }
-    footer>.contBtn{
+    .contBtn{
         width: 35%;
     }
 }
@@ -229,10 +233,10 @@ footer>.contBtn{
     header{
         height: 60px;
     }
-    header>a>div{
+    .contIconHeader{
         margin: 0px 7px;
     }
-    .contBtn>button{
+    .btnPoke{
         width: 70px;
         height: 70px;
     }
@@ -243,16 +247,16 @@ footer>.contBtn{
         padding: 0px 5%;
         height: 400px;
     }
-    main>.contStats{
+    .contStats{
         height: 340px;
     }
-    main>.contInfo>.contPokemon{
+    .contPokemon{
         width: 330px;
     }
     footer{
         height: 130px;
     }
-    .contBtn>button{
+    .btnPoke{
         width: 80px;
         height: 80px;
     }
@@ -265,33 +269,33 @@ footer>.contBtn{
     main{
         height: 500px;
     }
-    main>.contInfo>.contName{
+    .contName{
         height: 50px;
     }
-    main>.contInfo>.contName>input{
+    .namePokemon{
         font-size: 1.7vw;
         width: 30%;
     }
-    main>.contInfo>.contPokemon{
+    .contPokemon{
         width: 420px;
     }
-    main>.contStats{
+    .contStats{
         height: 440px;
     }
     footer{
         height: 140px;
     }
-    .contBtn>button{
+    .btnPoke{
         width: 90px;
         height: 90px;
     }
-    .contStats>div>p{
+    .nameStat{
         font-size: 1.5vw;
     }
-    .contStats>div>input{
+    .stat{
         font-size: 2vw;
     }
-    footer>.contOther{
+    .contOther{
         font-size: 1.1vw;
     }
 }
@@ -302,7 +306,7 @@ footer>.contBtn{
     footer{
         height: 150px;
     }
-    .contBtn>button{
+    .btnPoke{
         width: 100px;
         height: 100px;
     }
@@ -311,19 +315,19 @@ footer>.contBtn{
     main{
         height: 600px;
     }
-    main>.contInfo>.contName{
+    .contName{
         height: 60px;
     }
-    main>.contInfo>.contPokemon{
+    .contPokemon{
         width: 500px;
     }
-    main>.contStats{
+    .contStats{
         height: 510px;
     }
     footer{
         height: 150px;
     }
-    .contBtn>button{
+    .btnPoke{
         width: 110px;
         height: 110px;
     }

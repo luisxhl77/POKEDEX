@@ -13,7 +13,7 @@
 <body>
     <header>
         <a href="./index.html">
-            <div>
+            <div class="contIconHeader">
                 <img src="./img/pokebola.png" alt="">
             </div>
         </a>
@@ -22,39 +22,39 @@
     <main>
         <div class="contInfo">
             <div class="contName">
-                <div>
+                <div class="contIconElement">
                     <img src="./img/fuego.png" alt="" id="element">
                 </div>
-                <input type="text" name="" id="namePokemon" value="CHARIZARD" readonly="true">
+                <input type="text" name="namePokemon" id="namePokemon" class="namePokemon" value="CHARIZARD" readonly="true">
             </div>
             <div class="contPokemon">
                 <img src="./img/charizard.png" alt="" id="imgpokemon" title="CHARIZARD" onclick="movePokemon()">
             </div>
         </div>
         <div class="contStats">
-            <div>
-                <p>NO</p>
-                <input type="text" name="" id="No" value="006" readonly="true">
+            <div class="contStat">
+                <p class="nameStat">NO</p>
+                <input type="text" class="stat" name="" id="No" value="006" readonly="true">
             </div>
-            <div>
-                <p>LEVEL</p>
-                <input type="text" name="" id="level" value="100" readonly="true">
+            <div class="contStat">
+                <p class="nameStat">LEVEL</p>
+                <input type="text" class="stat" name="" id="level" value="100" readonly="true">
             </div>
-            <div>
-                <p>TYPE</p>
-                <input type="text" name="" id="type" value="FIRe" readonly="true">
+            <div class="contStat">
+                <p class="nameStat">TYPE</p>
+                <input type="text" class="stat" name="" id="type" value="FIRe" readonly="true">
             </div>
-            <div>
-                <p>HABILITY</p>
-                <input type="text" name="" id="hability" value="FLAMES" readonly="true">
+            <div class="contStat">
+                <p class="nameStat">HABILITY</p>
+                <input type="text" class="stat" name="" id="hability" value="FLAMES" readonly="true">
             </div>
-            <div>
-                <p>HEIGHT</p>
-                <input type="text" name="" id="height" value="1.7 M" readonly="true">
+            <div class="contStat">
+                <p class="nameStat">HEIGHT</p>
+                <input type="text" class="stat" name="" id="height" value="1.7 M" readonly="true">
             </div>
-            <div>
-                <p>WEIGHT</p>
-                <input type="text" name="" id="weight" value="50.5 KG" readonly="true">
+            <div class="contStat">
+                <p class="nameStat">WEIGHT</p>
+                <input type="text" class="stat" name="" id="weight" value="50.5 KG" readonly="true">
             </div>
         </div>
     </main>
@@ -63,12 +63,12 @@
             <h2>OTHERS</h2>
         </div>
         <div class="contBtn">
-            <button onclick="viewPokemon(0)"> <img src="./img/Squirte.png" alt="" title="Squirte"></button>
-            <button onclick="viewPokemon(1)"><img src="./img/newtwo.webp" alt="" title="newtwo"></button>
+            <button class="btnPoke" onclick="viewPokemon(0)"> <img src="./img/Squirte.png" alt="" title="Squirte"></button>
+            <button class="btnPoke" onclick="viewPokemon(1)"><img src="./img/newtwo.webp" alt="" title="newtwo"></button>
         </div>
         <div class="contBtn">
-            <button onclick="viewPokemon(2)"><img src="./img/Solgaleo.webp" alt="" title="Solgaleo"></button>
-            <button onclick="viewPokemon(3)"><img src="./img/snorlax.webp" alt="" title="snorlax"></button>
+            <button class="btnPoke" onclick="viewPokemon(2)"><img src="./img/Solgaleo.webp" alt="" title="Solgaleo"></button>
+            <button class="btnPoke" onclick="viewPokemon(3)"><img src="./img/snorlax.webp" alt="" title="snorlax"></button>
         </div>
     </footer>
     <script src="./js/index.js"></script>

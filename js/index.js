@@ -10,7 +10,7 @@ const weight = document.getElementById("weight");
 
 const pokemons = [
     {
-        namePokemon: "SQUIRTE",
+        namePokemon: "SQUIRTLE",
         No: "007",
         type: "WATER",
         height: "0,5 M",
@@ -55,7 +55,6 @@ const pokemons = [
         sound: "./sound/snorlax.mp3"
     }
 ];
-
 const viewPokemon = (position) => {
     let sound = new Audio(pokemons[position].sound);
     namePokemon.value = pokemons[position].namePokemon;
