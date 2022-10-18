@@ -1,77 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="./img/pokebola.png" type="image/x-icon">
+        <link rel="stylesheet" href="./css/style.css">
+        <title>POKÉDEX_</title>
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./img/pokebola.png" type="image/x-icon">
-    <title>Pokedex</title>
-    <link rel="stylesheet" href="./css/style.css">
-</head>
+    <body>
 
-<body>
-    <header>
-        <a href="./index.html">
-            <div class="contIconHeader">
-                <img src="./img/pokebola.png" alt="">
-            </div>
-        </a>
-        <h2>POKÉDEX_</h2>
-    </header>
-    <main>
-        <div class="contInfo">
-            <div class="contName">
-                <div class="contIconElement">
-                    <img src="./img/fuego.png" alt="" id="element">
+        <header class="header">
+
+            <figure class="header__icon">
+                <img src="./img/pokebola.png" alt="" >
+            </figure>
+            <h1 class="header__title">POKÉDEX_</h1>
+
+        </header>
+
+        <main class="data">
+
+            <section class="data__info">
+                <div class="data__poke">
+                    <figure class="data__element">
+                        <img src="./img/fuego.png" alt="" id="element" >
+                    </figure>
+                    <input type="text" name="namePokemon" id="namePokemon" class="data__name" value="CHARIZARD" readonly="true">
                 </div>
-                <input type="text" name="namePokemon" id="namePokemon" class="namePokemon" value="CHARIZARD" readonly="true">
-            </div>
-            <div class="contPokemon">
-                <img src="./img/charizard.png" alt="" id="imgpokemon" title="CHARIZARD" onclick="movePokemon()">
-            </div>
-        </div>
-        <div class="contStats">
-            <div class="contStat">
-                <p class="nameStat">NO</p>
-                <input type="text" class="stat" name="" id="No" value="006" readonly="true">
-            </div>
-            <div class="contStat">
-                <p class="nameStat">LEVEL</p>
-                <input type="text" class="stat" name="" id="level" value="100" readonly="true">
-            </div>
-            <div class="contStat">
-                <p class="nameStat">TYPE</p>
-                <input type="text" class="stat" name="" id="type" value="FIRe" readonly="true">
-            </div>
-            <div class="contStat">
-                <p class="nameStat">HABILITY</p>
-                <input type="text" class="stat" name="" id="hability" value="FLAMES" readonly="true">
-            </div>
-            <div class="contStat">
-                <p class="nameStat">HEIGHT</p>
-                <input type="text" class="stat" name="" id="height" value="1.7 M" readonly="true">
-            </div>
-            <div class="contStat">
-                <p class="nameStat">WEIGHT</p>
-                <input type="text" class="stat" name="" id="weight" value="50.5 KG" readonly="true">
-            </div>
-        </div>
-    </main>
-    <footer>
-        <div class="contOther">
-            <h2>OTHERS</h2>
-        </div>
-        <div class="contBtn">
-            <button class="btnPoke" onclick="viewPokemon(0)"> <img src="./img/Squirte.png" alt="" title="Squirte"></button>
-            <button class="btnPoke" onclick="viewPokemon(1)"><img src="./img/newtwo.webp" alt="" title="newtwo"></button>
-        </div>
-        <div class="contBtn">
-            <button class="btnPoke" onclick="viewPokemon(2)"><img src="./img/Solgaleo.webp" alt="" title="Solgaleo"></button>
-            <button class="btnPoke" onclick="viewPokemon(3)"><img src="./img/snorlax.webp" alt="" title="snorlax"></button>
-        </div>
-    </footer>
-    <script src="./js/index.js"></script>
-</body>
+                <figure class="data__image">
+                    <img src="./img/charizard.png" alt="charizard" id="imgpokemon" title="CHARIZARD" onclick="movePokemon()">
+                </figure>
+            </section>
 
+            <section class="data__stats">
+                <article class="data__stats-poke">
+                    <p class="data__name-stat"> No </p>
+                    <input type="text" class="data__info-stat" name="" id="No" value="006" readonly="true">
+                </article>
+                <article class="data__stats-poke">
+                    <p class="data__name-stat"> Level </p>
+                    <input type="text" class="data__info-stat" name="" id="level" value="100" readonly="true">
+                </article>
+                <article class="data__stats-poke">
+                    <p class="data__name-stat"> Type </p>
+                    <input type="text" class="data__info-stat" name="" id="type" value="FIRe" readonly="true">
+                </article>
+                <article class="data__stats-poke">
+                    <p class="data__name-stat"> Hability </p>
+                    <input type="text" class="data__info-stat" name="" id="hability" value="FLAMES" readonly="true">
+                </article>
+                <article class="data__stats-poke">
+                    <p class="data__name-stat"> HEIGHT </p>
+                    <input type="text" class="data__info-stat" name="" id="height" value="1.7 M" readonly="true">
+                </article>
+                <article class="data__stats-poke">
+                    <p class="data__name-stat"> WEIGHT </p>
+                    <input type="text" class="data__info-stat" name="" id="weight" value="90.5 KG" readonly="true">
+                </article>
+            </section>
+
+        </main>
+
+        <footer class="footer">
+
+            <div class="footer__others">
+                <h2 class="footer__text-others">OTHERS</h2>
+            </div>
+            <div class="footer__button">
+                <button class="footer__button-poke"><img src="./img/Squirte.png" alt="Squirte" title="Squirte" onclick="viewPokemon(0)"></button>
+                <button class="footer__button-poke"><img src="./img/newtwo.webp" alt="newtwo" title="newtwo" onclick="viewPokemon(1)"></button>
+            </div>
+            <div class="footer__button"> 
+                <button class="footer__button-poke"><img src="./img/Solgaleo.webp" alt="Solgaleo" title="Solgaleo" onclick="viewPokemon(2)"></button>
+                <button class="footer__button-poke"><img src="./img/snorlax.webp" alt="snorlax" title="snorlax" onclick="viewPokemon(3)"></button>
+            </div>
+
+        </footer>
+
+        <script src="./js/index.js"></script>
+    </body>
 </html>

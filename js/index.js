@@ -1,3 +1,4 @@
+
 const namePokemon = document.getElementById("namePokemon");
 const imgelement = document.getElementById("element");
 const imgpokemon = document.getElementById("imgpokemon");
@@ -55,6 +56,7 @@ const pokemons = [
         sound: "./sound/snorlax.mp3"
     }
 ];
+
 const viewPokemon = (position) => {
     let sound = new Audio(pokemons[position].sound);
     namePokemon.value = pokemons[position].namePokemon;
@@ -66,6 +68,7 @@ const viewPokemon = (position) => {
     weight.value = pokemons[position].weight;
     imgpokemon.src = pokemons[position].imgpokemon;
     imgpokemon.title = pokemons[position].namePokemon;
+    imgpokemon.alt = pokemons[position].namePokemon;
     imgelement.src = pokemons[position].imgelement;
     movePokemon(sound);
 }
